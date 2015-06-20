@@ -1,0 +1,17 @@
+{
+  "name": "Mailed",
+  "description": "Email services from Mailed",
+  "version": "1.0",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["menu.js", "jquery-2.1.4.min.js"]
+  },
+   "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [],
+      "js": ["right-click.js"]
+    }
+  ],
+  "manifest_version": 2
+}
